@@ -131,7 +131,7 @@ public final class CatSystem2Plugin implements EnginePlugin, EngineStepDriven {
         }
         if (engine == 0) throw new IOException(nativeError());
         // What the reader is shown goes to Enginehost, which reads it aloud and
-        // translates it (Droidtop/tracker#490); the engine calls text() below.
+        // translates it (mytop-project/tracker#490); the engine calls text() below.
         nativeListenText(engine, this);
         if (session.display() != null) {
             view = new ScreenView();
